@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ToolBarBackGround"
+        app:contentInsetStartWithNavigation="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="平安成电智慧通行"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_more_horiz"
+                android:layout_gravity="right"
+                android:paddingRight="12dp"
+                />
+        </FrameLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/permission"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="研究生用户，出校授权有效!"
+        android:textColor="@color/firstLine"
+        android:textSize="@dimen/textSizeBig"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        >
+    </TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ToolBarBackGround"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="8dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_person"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户姓名"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textSizeMid"
+            />
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="点击输入姓名"
+            android:clickable="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSizeBig"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:typeface="sans"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_people"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登记类型"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textSizeMid"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="研究生（硕士）"
+            android:textColor="@color/secondLine"
+            android:textSize="@dimen/textSizeBig"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:typeface="sans"/>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_timer"
+                android:layout_gravity="center|left"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="12dp" ></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登记时间"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/textSizeMid"
+
+                />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:textColor="@color/colorTime"
+            android:textSize="@dimen/textSizeTime"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:singleLine="true"
+            android:layout_marginRight="8dp"
+            />
+    </FrameLayout>
+
+
+</LinearLayout>

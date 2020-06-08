@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PassGate</string>
+    <dimen name="textSizeBig">25sp</dimen>
+    <dimen name="textSizeMid">16.5sp</dimen>
+    <dimen name="textSizeSmall">14sp</dimen>
+    <dimen name="textSizeTime">20sp</dimen>
+
+</resources>
